@@ -1,1 +1,0 @@
-# yichijin.github.io
