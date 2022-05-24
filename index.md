@@ -14,6 +14,6 @@ Sometimes I come across cute problems that I think about and feel are worth writ
 
 -   The size of the Codenames word pool ([link](https://yichijin.github.io/files/codenames.pdf))
     
--   The distribution of unpecked chicks ([link](https://yichijin.github.iofiles/unpecked.pdf))
+-   The distribution of unpecked chicks ([link](https://yichijin.github.io/files/unpecked.pdf))
     
 -   Elchanan Mossel's dice problem ([link](https://yichijin.github.io/files/elchanan.pdf))
