@@ -16,4 +16,4 @@ Sometimes I come across cute problems that I think about and feel are worth writ
     
 -   The distribution of unpecked chicks ([link](https://yichijin.github.iofiles/unpecked.pdf))
     
--   Elchanan Mossel's dice problem ([link](https://yichijin.github.io/files/elchanan.pdf))/
+-   Elchanan Mossel's dice problem ([link](https://yichijin.github.io/files/elchanan.pdf))
