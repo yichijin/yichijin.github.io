@@ -6,7 +6,7 @@ My general philosophy towards data science is that simple methods are usually su
 
 I care a lot about having a positive impact on society and am  **always on the lookout for opportunities with non-profits or local government agencies**. If you know of any interesting openings, please reach out.
 
-- I'm currently a staff data scientist at LaunchDarkly, helping to build out their experimentation product.
+- I'm currently a staff data scientist at [LaunchDarkly](https://launchdarkly.com/), helping to build out their experimentation product.
 
 - I did a brief stint on the Growth team at [Mercury](https://mercury.com/).
 
