@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Jin - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 50px;
+            background: white;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+        }
+        
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info span::after {
+            content: " •";
+            margin-left: 15px;
+            color: #ccc;
+        }
+        
+        .contact-info span:last-child::after {
+            content: "";
+        }
+        
+        .contact-info a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .about {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .experience-item {
+            margin-bottom: 18px;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .company-role {
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        .company-name {
+            color: #333;
+        }
+        
+        .role-title {
+            font-weight: 400;
+            color: #666;
+        }
+        
+        .date {
+            font-size: 13px;
+            color: #888;
+            white-space: nowrap;
+        }
+        
+        .description {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #555;
+            margin-left: 0;
+        }
+        
+        .description li {
+            margin-bottom: 3px;
+            margin-left: 20px;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        
+        .education-left {
+            font-size: 14px;
+        }
+        
+        .school-name {
+            font-weight: 600;
+        }
+        
+        .degree {
+            color: #666;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+        }
+        
+        .skill-category {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .skill-label {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .skill-items {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jimmy Jin</h1>
+        <div class="contact-info">
+            <span>yichi.jin@gmail.com</span>
+            <span><a href="http://www.yichijin.com">yichijin.com</a></span>
+            <span><a href="https://www.linkedin.com/in/jimmy-jin-5325ab6">linkedin.com/in/jimmy-jin-5325ab6</a></span>
+            <span>Oakland, CA</span>
+        </div>
+    </header>
+    
+    <section class="about">
+        <h2>About</h2>
+        <p>
+            I'm a PhD in statistics experienced in all aspects of data science but with a particular expertise in experimentation. I most enjoy going from 0 to 80 and getting my hands dirty: I love working with production code and moonlighting as a data engineer. Big fan of the t-test, SQL and Spark.
+        </p>
+    </section>
+    
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company-role">
+                    <span class="company-name">LaunchDarkly</span>
+                    <span class="role-title">| Staff Data Scientist</span>
+                </div>
+                <div class="date">Mar 2025 - Present</div>
+            </div>
+            <ul class="description">
+                <li>Leading statistical architecture and methodology for the experimentation platform</li>
+		<li>Led the development of multiple comparison corrections and sequential testing to the platform</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company-role">
+                    <span class="company-name">Mercury</span>
+                    <span class="role-title">| Data Scientist</span>
+                </div>
+                <div class="date">Sep 2024 - Feb 2025</div>
+            </div>
+            <ul class="description">
+                <li>Worked on Dashboard team within Growth org, setting goals and metrics</li>
+                <li>Performed product analytics to drive growth initiatives and improve user engagement</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company-role">
+                    <span class="company-name">Stripe</span>
+                    <span class="role-title">| Data Scientist</span>
+                </div>
+                <div class="date">Jul 2019 - Sep 2024</div>
+            </div>
+            <ul class="description">
+                <li>Founding data scientist on card optimization, quantifying billions in incremental revenue through experiments</li>
+                <li>Built Stripe's first contextual bandit algorithm for Stripe Dashboard, driving 20% uplift in click-through rates</li>
+                <li>Developed core user funnels, metrics, and dashboards for Link product</li>
+                <li>Created foundation data pipelines for quantifying FX exposure</li>
+                <li>Blended modeling/analysis, data engineering, and production code across Link, Dashboard, FX, and payments</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="company-role">
+                    <span class="company-name">Optimizely</span>
+                    <span class="role-title">| Statistician</span>
+                </div>
+                <div class="date">Nov 2017 - May 2019</div>
+            </div>
+            <ul class="description">
+                <li>Led all statistics operations and served as acting Product Manager for Analytics</li>
+                <li>Created Epoch Stats Engine, novel stratification-based estimator eliminating Simpson's Paradox</li>
+                <li>Authored company's first Statistics Roadmap for short- and long-term R&D strategy</li>
+                <li>Translated advanced statistical concepts for customers in pre- and post-sales engagements</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="education-left">
+                <span class="school-name">University of North Carolina at Chapel Hill</span>
+                <span class="degree">| PhD in Statistics</span>
+            </div>
+            <div class="date">2012 - 2017</div>
+        </div>
+        <div class="education-item">
+            <div class="education-left">
+                <span class="school-name">Swarthmore College</span>
+                <span class="degree">| BA in Economics, with honors</span>
+            </div>
+            <div class="date">2006 - 2010</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill-category">
+                <span class="skill-label">Languages:</span>
+                <span class="skill-items">Python, SQL</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-label">Technologies:</span>
+                <span class="skill-items">Spark, Airflow, dbt</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
