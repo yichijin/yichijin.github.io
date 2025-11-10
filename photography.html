@@ -62,6 +62,11 @@
             flex-direction: column;
         }
 
+        .gallery-item a {
+            text-decoration: none;
+            display: block;
+        }
+
         .thumbnail-wrapper {
             position: relative;
             width: 100%;
@@ -99,52 +104,6 @@
             line-height: 1.4;
         }
 
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            animation: fadeIn 0.3s;
-        }
-
-        .modal.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .modal-content {
-            max-width: 90%;
-            max-height: 90vh;
-            object-fit: contain;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 40px;
-            color: #fff;
-            font-size: 40px;
-            font-weight: 300;
-            cursor: pointer;
-            transition: color 0.3s;
-            user-select: none;
-        }
-
-        .modal-close:hover {
-            color: #bbb;
-        }
-
         /* Responsive design */
         @media (max-width: 900px) {
             .gallery {
@@ -162,12 +121,6 @@
             h1 {
                 font-size: 1.75em;
             }
-
-            .modal-close {
-                top: 10px;
-                right: 20px;
-                font-size: 35px;
-            }
         }
     </style>
 </head>
@@ -183,9 +136,11 @@
 
     <div class="gallery">
             <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/berkeley_lupine_thumbnail.jpg')">
-                    <img src="files/photos/berkeley_lupine.jpg" alt="Berkeley Lupine">
-                </div>
+                <a href="files/photos/berkeley_lupine.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/berkeley_lupine_thumbnail.jpg" alt="Berkeley Lupine">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Berkeley Lupine</div>
                     <div class="image-details">
@@ -197,9 +152,11 @@
             </div>
 
             <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/yosemite_bark_thumbnail.jpg')">
-                    <img src="files/photos/yosemite_bark.jpg" alt="Yosemite Bark">
-                </div>
+                <a href="files/photos/yosemite_bark.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/yosemite_bark_thumbnail.jpg" alt="Yosemite Bark">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Yosemite Bark</div>
                     <div class="image-details">
@@ -211,9 +168,11 @@
             </div>
             
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/mothers_day_thumbnail.jpg')">
-                    <img src="files/photos/mothers_day.jpg" alt="Mothers Day">
-                </div>
+                <a href="files/photos/mothers_day.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/mothers_day_thumbnail.jpg" alt="Mothers Day">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Mothers Day</div>
                     <div class="image-details">
@@ -225,9 +184,11 @@
             </div>
 
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/el_mirador_path_thumbnail.jpg')">
-                    <img src="files/photos/el_mirador_path.jpg" alt="El Mirador Path">
-                </div>
+                <a href="files/photos/el_mirador_path.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/el_mirador_path_thumbnail.jpg" alt="El Mirador Path">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">El Mirador Path</div>
                     <div class="image-details">
@@ -239,9 +200,11 @@
             </div>
 
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/indian_rock_thumbnail.jpg')">
-                    <img src="files/photos/indian_rock.jpg" alt="Indian Rock">
-                </div>
+                <a href="files/photos/indian_rock.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/indian_rock_thumbnail.jpg" alt="Indian Rock">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Indian Rock</div>
                     <div class="image-details">
@@ -253,9 +216,11 @@
             </div>
 
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/tuolumne_river_above_glen_aulin_thumbnail.jpg')">
-                    <img src="files/photos/tuolumne_river_above_glen_aulin.jpg" alt="Tuolumne River Above Glen Aulin">
-                </div>
+                <a href="files/photos/tuolumne_river_above_glen_aulin.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/tuolumne_river_above_glen_aulin_thumbnail.jpg" alt="Tuolumne River Above Glen Aulin">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Tuolumne River Above Glen Aulin</div>
                     <div class="image-details">
@@ -267,9 +232,11 @@
             </div>
 	    
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/eling_lotus_thumbnail.jpg')">
-                    <img src="files/photos/eling_lotus.jpg" alt="Eling Lotus">
-                </div>
+                <a href="files/photos/eling_lotus.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/eling_lotus_thumbnail.jpg" alt="Eling Lotus">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Eling Lotus</div>
                     <div class="image-details">
@@ -281,9 +248,11 @@
             </div>
 	    
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/summer_palace_rooftops.jpg')">
-                    <img src="files/photos/summer_palace_rooftops.jpg" alt="Summer Palace Rooftops">
-                </div>
+                <a href="files/photos/summer_palace_rooftops.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/summer_palace_rooftops_thumbnail.jpg" alt="Summer Palace Rooftops">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Summer Palace Rooftops</div>
                     <div class="image-details">
@@ -295,9 +264,11 @@
             </div>
 	    
 	    <div class="gallery-item">
-                <div class="thumbnail-wrapper" onclick="openModal('files/photos/thumbnails/summer_palace_lineup.jpg')">
-                    <img src="files/photos/summer_palace_lineup.jpg" alt="Summer Palace Lineup">
-                </div>
+                <a href="files/photos/summer_palace_lineup.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/summer_palace_lineup_thumbnail.jpg" alt="Summer Palace Lineup">
+                    </div>
+                </a>
                 <div class="image-info">
                     <div class="image-title">Summer Palace Lineup</div>
                     <div class="image-details">
@@ -312,33 +283,5 @@
         </div>
     </div>
 
-    <!-- Modal for full-size images -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.classList.add('active');
-            modalImg.src = imageSrc;
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.remove('active');
-            document.body.style.overflow = ''; // Re-enable scrolling
-        }
-
-        // Close modal on Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
 </body>
 </html>
