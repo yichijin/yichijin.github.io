@@ -16,7 +16,11 @@ My general philosophy towards data science is: simple methods are usually best. 
     
 I care a lot about having a positive impact on society and am  **always on the lookout for opportunities with non-profits or local government agencies**. If you know of any interesting openings, please reach out.
 
-## Miscellany
+## Photography
+
+Taking pictures has been an ongoing hobby of mine going back to high school. <a href="photography.html">You can see some recent work here</a>.
+
+## Math miscellany
 
 Sometimes I come across cute problems that I think about and feel are worth writing up:
 
