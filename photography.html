@@ -104,6 +104,21 @@
             line-height: 1.4;
         }
 
+	.email-code {
+            /* Uses system code fonts so it looks native on Mac/Windows/Linux */
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            
+            /* This makes the whole email highlight with a single click */
+            -webkit-user-select: all; 
+            user-select: all;
+            cursor: pointer;
+        }
+
         /* Responsive design */
         @media (max-width: 900px) {
             .gallery {
@@ -130,8 +145,11 @@
     <header>
         <h1>Photography</h1>
         <p class="description">
-	Because I stare at screens for most of the working day I've been rediscovering my love for all-analog photography: shooting on film, developing at home, and printing on photographic paper. Here are some favorite prints that I've made along the way.<br><br>
-	I "scan" the finished product just using my camera phone without any fancy color correction, so the quality seen here is a bit lacking! Nevertheless, if you're inspired by these and want to chat, you can find my contact on my <a href="files/resume.html">resume</a>. I'm also on Instagram at <a href="https://www.instagram.com/yichiphoto/">@yichiphoto</a>.
+	I make silver gelatin prints from film negatives in my backyard darkroom. Here's a selection of prints (apologies for photo taken with crappy phone camera).<br><br>
+
+	If you see a print you like, then I am happy to make one for you at a reasonable price to offset my paper costs. I charge $50 for a 5x7 or $100 for an 8x10 (shipping included to continenal US). Prints come on nice, heavy double weight paper -- either Ilford RC Portfolio or Ilford Art 300. I can also mat the print to your preferred size for a little extra.<br><br>
+
+	E-mail me if you're interested: <span class="email-code">yichi.jin@gmail.com</span>. I'm also on Instagram at <a href="https://www.instagram.com/yichiphoto/">@yichiphoto</a>.
         </p>
     </header>
 
