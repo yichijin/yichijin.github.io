@@ -22,7 +22,7 @@
         }
 
         header {
-            margin-bottom: 40px;
+            margin-bottom: 24px;
         }
 
         h1 {
@@ -119,6 +119,30 @@
             cursor: pointer;
         }
 
+        .notes {
+            margin-bottom: 40px;
+        }
+
+        .notes h2 {
+            font-size: 1.1em;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .notes-list {
+            list-style: none;
+        }
+
+        .notes-list li {
+            margin-bottom: 6px;
+        }
+
+        .notes-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: 8px;
+        }
+
         /* Responsive design */
         @media (max-width: 900px) {
             .gallery {
@@ -145,16 +169,40 @@
     <header>
         <h1>Photography</h1>
         <p class="description">
-	I make silver gelatin prints from film negatives in my backyard darkroom. Here's a selection of prints (apologies for photo taken with crappy phone camera).<br><br>
+	I make silver gelatin prints from film negatives in my backyard darkroom. Here's a selection of prints (apologies for photo taken with crappy phone camera). If you see a print you like, then I am happy to make one for you at a reasonable price to offset my paper costs! E-mail me if you're interested: <span class="email-code">yichi.jin@gmail.com</span>.<br><br>
 
-	If you see a print you like, then I am happy to make one for you at a reasonable price to offset my paper costs. I charge $50 for a 5x7 or $100 for an 8x10 (shipping included to continenal US). Prints come on nice, heavy double weight paper -- either Ilford RC Portfolio or Ilford Art 300. I can also mat the print to your preferred size for a little extra.<br><br>
-
-	E-mail me if you're interested: <span class="email-code">yichi.jin@gmail.com</span>. I'm also on Instagram at <a href="https://www.instagram.com/yichiphoto/">@yichiphoto</a>.
+	I'm also on Instagram at <a href="https://www.instagram.com/yichiphoto/">@yichiphoto</a>.
         </p>
     </header>
 
+    <div class="notes">
+        <h2>Notes</h2>
+        <ul class="notes-list">
+            <li><a href="blog/warmtone-papers-compared.html">Warmtone papers compared: Ilford MGWT and Fomatone</a><span class="notes-date">July 2026</span></li>
+            <!-- Add one entry per post, most recent first:
+            <li><a href="blog/your-post-slug.html">Post Title</a><span class="notes-date">July 2026</span></li>
+            -->
+        </ul>
+    </div>
+
     <div class="gallery">
-	    
+
+	    <div class="gallery-item">
+                <a href="files/photos/nanlian_lilies.jpg" target="_blank">
+                    <div class="thumbnail-wrapper">
+                        <img src="files/photos/thumbnails/nanlian_lilies_thumbnail.jpg" alt="Nanlian Lilies">
+                    </div>
+                </a>
+                <div class="image-info">
+                    <div class="image-title">Nanlian Lilies</div>
+                    <div class="image-details">
+                        Fomatone MG Classic Matt 8x10<br>
+			Half frame / Kentmere 100 / Rodinal<br>
+			Spring 2026
+                    </div>
+                </div>
+            </div>
+
 	    <div class="gallery-item">
                 <a href="files/photos/nanzenji.jpg" target="_blank">
                     <div class="thumbnail-wrapper">
