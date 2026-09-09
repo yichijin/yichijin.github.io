@@ -6,7 +6,9 @@ I'm a PhD in statistics experienced in all aspects of data science but with a pa
 
 My general philosophy towards data science is: simple methods are usually best. Clean data beats sophisticated techniques when it comes to speed, transparency, and robustness. Don't do complicated unless you absolutely have to.
 
-- I'm currently a staff data scientist at [LaunchDarkly](https://launchdarkly.com/), helping to build out their experimentation product.
+- I'm currently a data scientist working on experimentation at [Netflix](https://netflix.com/).
+
+- I was a staff data scientist at [LaunchDarkly](https://launchdarkly.com/) for 1.5 years, where I provided critical leadership on several initiatives related to the experimentation product: I pivoted the team move away from non-technical personas to focus on data-heavy customers, built many foundational statistics features (multiple comparisons corrections, sequential testing, stratified sampling, ratio metrics, etc) and worked on several infrastructure initiatives such as persisted results and a statistics service.
 
 - I did a brief stint on the Growth team at [Mercury](https://mercury.com/).
 
