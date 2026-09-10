@@ -9,12 +9,12 @@
 <meta name="robots" content="noindex">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Light Table">
+<meta name="apple-mobile-web-app-title" content="Invert Sheet">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>Light Table Positive</title>
+<title>Invert Your Contact Sheet</title>
 <style>
   /* standalone-document reset (the artifact host used to supply this) */
   html,body{margin:0;padding:0;height:100%}
@@ -78,14 +78,14 @@
     gap:7px;
     flex:0 0 auto;
   }
-  .mark b,.mark span{
+  .mark b{
     font-weight:800;
     font-size:13px;
     letter-spacing:.14em;
     text-transform:uppercase;
     white-space:nowrap;
+    color:var(--safelight);
   }
-  .mark span{color:var(--safelight)}
 
   .slug{
     flex:1 1 90px;
@@ -99,6 +99,10 @@
     text-align:right;
   }
   .slug em{font-style:normal;color:var(--dimmer)}
+
+  /* Heading and this button are the rail's only two amber elements; hold
+     them at opposite ends so they read as poles, not one block. */
+  #openBtn{margin-left:auto}
 
   /* ---------- buttons ---------- */
 
@@ -388,7 +392,7 @@
 
   @media (max-width:430px){
     .rail{gap:5px 9px;padding:9px 11px}
-    .mark b,.mark span{font-size:11px;letter-spacing:.11em}
+    .mark b{font-size:11px;letter-spacing:.11em}
     .deck{padding:11px 11px calc(11px + env(safe-area-inset-bottom))}
     .readouts{gap:13px}
     button{padding:9px 10px;font-size:10px}
@@ -405,7 +409,7 @@
 <body>
 <div class="app">
   <div class="rail">
-    <div class="mark"><b>Light Table</b><span>Positive</span></div>
+    <div class="mark"><b>Invert Your Contact Sheet</b></div>
     <div class="slug" id="slug"><em>Sample contact sheet &mdash; 35mm, 35 frames</em></div>
     <button class="primary" id="openBtn">Open image</button>
     <input type="file" id="file" accept="image/*" hidden>

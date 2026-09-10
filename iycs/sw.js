@@ -1,6 +1,6 @@
 /* Light Table Positive — offline shell.
  *
- * Registered from /lighttable/, so its scope is /lighttable/ only: this
+ * Registered from /iycs/, so its scope is /iycs/ only: this
  * worker never sees, caches, or intercepts anything else on the site.
  *
  * Strategy is stale-while-revalidate. A cached response is served
@@ -9,7 +9,7 @@
  * forces every client onto a new generation.
  */
 
-var CACHE = 'ltp-v1';
+var CACHE = 'iycs-v1';
 
 var ASSETS = [
   './',
@@ -45,7 +45,7 @@ self.addEventListener('fetch', function(e){
 
   var url = new URL(e.request.url);
   if(url.origin !== self.location.origin) return;          // leave third parties alone
-  if(url.pathname.indexOf('/lighttable/') !== 0) return;   // and the rest of the site
+  if(url.pathname.indexOf('/iycs/') !== 0) return;   // and the rest of the site
 
   e.respondWith(
     caches.match(e.request).then(function(hit){
