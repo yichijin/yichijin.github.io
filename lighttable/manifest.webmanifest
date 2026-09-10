@@ -1,0 +1,16 @@
+{
+  "name": "Light Table Positive",
+  "short_name": "Light Table",
+  "description": "Turns a phone photo of backlit black-and-white negatives into a positive, with black- and white-point controls.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0e0e0e",
+  "theme_color": "#0e0e0e",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
